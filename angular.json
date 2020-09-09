@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Formly"
+    }
+  },
+  "defaultProject": "Formly",
+  "cli": {
+    "analytics": "185eb48d-9fc8-4d06-a44c-63c16bcc3c85"
+  }
 }
