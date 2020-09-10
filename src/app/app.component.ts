@@ -11,7 +11,7 @@ export class AppComponent {
   form = new FormGroup({});
   model: any = {};
   options: FormlyFormOptions = {};
-  fields: typeof ALL_FORMS[] = [];
+  fields: FormlyFieldConfig[] = ALL_FORMS[0];
 
   /* 
     {
