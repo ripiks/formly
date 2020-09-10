@@ -13,39 +13,6 @@ export class AppComponent {
   options: FormlyFormOptions = {};
   fields: FormlyFieldConfig[] = ALL_FORMS[0];
 
-
-  /* 
-    {
-      key: 'Email',
-      type: 'input',
-      wrappers: ['form-field-horizontal'],
-      templateOptions: {
-        label: 'Email',
-        type: 'email',
-        placeholder: 'Zde prosim vypis email',
-        required: true,
-      },
-    },
-    {
-      key: 'password',
-      type: 'input',
-      wrappers: ['form-field-horizontal'],
-      templateOptions: {
-        label: 'Password',
-        type: 'password',
-        placeholder: 'heslo',
-        required: true,
-      },
-    },
-    {
-      type: 'checkbox',
-      key: 'GDPR',
-      templateOptions: {
-        label: 'Souhlasim s GDPR....',
-      },
-    },
-  ];
-  */
   submit() {
     alert(JSON.stringify(this.model));
   }
