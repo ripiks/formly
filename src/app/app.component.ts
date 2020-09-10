@@ -1,29 +1,19 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormlyFormOptions, FormlyFieldConfig } from '@ngx-formly/core';
-
+import { ALL_FORMS } from './Demos';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   form = new FormGroup({});
   model: any = {};
   options: FormlyFormOptions = {};
+  fields: typeof ALL_FORMS[] = [];
 
-  fields: FormlyFieldConfig[] = [
-    {
-      key: 'Name',
-      type: 'input',
-      wrappers: ['form-field-horizontal'],
-      templateOptions: {
-        label: 'UserName',
-        type: 'name',
-        placeholder: 'Zadej prosim jmeno',
-        required: true,
-      },
-    },
+  /* 
     {
       key: 'Email',
       type: 'input',
@@ -54,6 +44,7 @@ export class AppComponent {
       },
     },
   ];
+  */
   submit() {
     alert(JSON.stringify(this.model));
   }
