@@ -11,7 +11,8 @@ export class AppComponent {
   form = new FormGroup({});
   model: any = {};
   options: FormlyFormOptions = {};
-  fields: typeof ALL_FORMS[] = [];
+  fields: FormlyFieldConfig[] = ALL_FORMS[0];
+
 
   /* 
     {
@@ -47,5 +48,15 @@ export class AppComponent {
   */
   submit() {
     alert(JSON.stringify(this.model));
+  }
+
+  Demo1(){
+    this.fields = ALL_FORMS [0];
+
+  }
+
+  Demo2(){
+    this.fields = ALL_FORMS [1];
+
   }
 }
