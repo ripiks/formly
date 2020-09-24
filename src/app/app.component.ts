@@ -26,4 +26,14 @@ export class AppComponent {
     this.fields = ALL_FORMS [1];
 
   }
+
+  Demo3(){
+    this.fields = ALL_FORMS [2];
+
+  }
+  
+  Demo4(){
+    this.fields = ALL_FORMS [2];
+
+  }
 }

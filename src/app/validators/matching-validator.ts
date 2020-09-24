@@ -1,7 +1,7 @@
 import { AbstractControl } from '@angular/forms';
 
 export function minlengthValidationMessages(err, field) {
-  return `musí mít ${field.templateOptions.minLength} znaků`;
+  return `musí mít min.3 znaky`;
 }
 
 export function fieldMatchValidator(control: AbstractControl) {

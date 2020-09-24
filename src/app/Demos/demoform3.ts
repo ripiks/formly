@@ -1,6 +1,6 @@
 import { FormlyFieldConfig } from '@ngx-formly/core';
 
-export const demoform2: FormlyFieldConfig[] = [
+export const demoform3: FormlyFieldConfig[] = [
   {
     key: 'name',
     type: 'input',
@@ -38,6 +38,7 @@ export const demoform2: FormlyFieldConfig[] = [
   {
     key: 'passwordConfirm',
     type: 'input',
+    hideExpression: '!model.password',
     wrappers: ['form-field-horizontal'],
     templateOptions: {
       type: 'password',
@@ -46,9 +47,6 @@ export const demoform2: FormlyFieldConfig[] = [
       required: true,
       minLenght: 5,
     },
-    validation: [
-      {name: 'fieldMatch', options: { errorPath: 'passwordConfirm' }}
-    ]
   },
   {
     type: 'checkbox',
